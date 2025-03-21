@@ -4,7 +4,7 @@ public class typeProgramVacationOrBudget {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("Enter destination:");
+        System.out.println("Enter destination Beach/Mountain:");
         String typeVacation = myScanner.next();
         System.out.println("Enter budget:");
         float budget = myScanner.nextFloat();
@@ -15,7 +15,7 @@ public class typeProgramVacationOrBudget {
                 }
 
             if (budget > 50 && typeVacation.equals("Beach")){
-                System.out.println("OUTSIDE BULGARIA");
+                System.out.println("OUTSIDE BULGARIA!");
             }
 
             if (budget <= 30 && typeVacation.equals("Mountain")) {
@@ -25,10 +25,10 @@ public class typeProgramVacationOrBudget {
                 System.out.println("Outside Bulgaria! ");
             }
 
+            
+        } else{
+            System.out.println("There is no information.Please insert word with upper letter !!!");
         }
-
-        if(typeVacation != "Mountain" || typeVacation != "Beach")
-            System.out.println("There is no information .Please input text with upper letter");
     }
 }
 
