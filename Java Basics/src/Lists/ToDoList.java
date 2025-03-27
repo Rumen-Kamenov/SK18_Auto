@@ -5,29 +5,35 @@ import java.util.Collections;
 
 public class ToDoList {
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> toDoList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter Size of the List: ");
-        int n = scanner.nextInt();
-        scanner.nextLine();  // Consume next line
 
-        // Using for loop to add elements dynamically
-        for (int i = 0; i < n; i++) {
-            System.out.print("Enter item " + (i + 1) + ": ");
-            list.add(scanner.nextLine());    // add dynamically items to arrayList
-        }
-        if(list.size() == n){
-            System.out.println("Completed Tasks");
-            System.out.println("_______________");
-        }
-        System.out.println(".");
+        // Add initial tasks to the list
+        toDoList.add("Buy groceries");
+        toDoList.add("Clean the house");
+        toDoList.add("Finish homework");
 
-        // Display the list
-        System.out.print("Items in the list:");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i)+",");
+        // Display all tasks with their index
+        System.out.println("To-Do List: ");
+        for (int i = 0; i < toDoList.size(); i++) {
+            System.out.println(i + ": " + toDoList.get(i));
         }
 
-        scanner.close();
+        // Prompt user to mark a task as completed
+        System.out.print("Enter the index of the completed task: ");
+        int index = scanner.nextInt();
+
+        // Check if the index is valid and remove the task
+        if (index >= 0 && index < toDoList.size()) {
+            toDoList.remove(index);
+            System.out.println("Task removed successfully.");
+
+            System.out.println("Updated To-Do List:");
+            for (int i = 0; i < toDoList.size(); i++) {
+                System.out.println(i + ": " + toDoList.get(i));
+            }
+        } else {
+            System.out.println("Invalid index. No task was removed.");
+        }
     }
 }
