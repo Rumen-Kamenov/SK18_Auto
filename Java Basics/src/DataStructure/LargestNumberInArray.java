@@ -1,4 +1,4 @@
-package Lists;
+package DataStructure;
 
 public class LargestNumberInArray {
     public static void main(String[] args) {

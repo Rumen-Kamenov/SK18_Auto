@@ -1,4 +1,4 @@
-package Lists;
+package DataStructure;
 
 public class SumOfGivenArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Lists;
+package DataStructure;
 
 public class ArrayPrint2D {
     public static void main(String[] args) {
