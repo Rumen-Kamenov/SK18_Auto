@@ -1,4 +1,4 @@
-package Inheritence;
+package Inheritence.exercise1;
 
 public class Circle extends Shape{
     private double P =3.14;

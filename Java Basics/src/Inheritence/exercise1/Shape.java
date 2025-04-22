@@ -1,4 +1,4 @@
-package Inheritence;
+package Inheritence.exercise1;
 
 public class Shape {
 
