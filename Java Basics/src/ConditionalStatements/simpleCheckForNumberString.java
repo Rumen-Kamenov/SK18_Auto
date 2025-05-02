@@ -11,7 +11,7 @@ public class simpleCheckForNumberString {
         int n = myScanner.nextInt();
         String str = String.valueOf(n);
 
-        if(-100 >= n && n <= 100){
+        if(-100 > n &&  n <= 100){
             System.out.println("Wrong answer");
         } else {
             System.out.println("Good job");
